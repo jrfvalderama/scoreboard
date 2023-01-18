@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div id="home-score" class="scoreboard">0</div>
+                <button id="home1" onclick="homeAdd1()">+1</button>
+                <button id="home2" onclick="homeAdd2()">+2</button>
+                <button id="home3" onclick="homeAdd3()">+3</button>
+                <div class="other">
+                    <div id="home-fouls">Fouls: <span id="home-foul-span">0</span> <button id="home-fouls-btn" onclick="addHomeFouls()">+</button></div>
+                    <div id="home-timeouts">Time Outs: <span id="homeTO-span">3</span> <button id="home-timeouts-btn" onclick="subtractHomeTO()">-</button></div>
+                </div>
+            </div>
+            <div class="mid-btns">
+                <div id="timer">12:00</div>
+                <div id="period">1</div>
+                <button id="newGame-btn" onclick="newGame()">New Game</button>
+                <h2 id="end"></h2>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div id="guest-score" class="scoreboard">0</div>
+                <button id="guest1" onclick="guestAdd1()">+1</button>
+                <button id="guest2" onclick="guestAdd2()">+2</button>
+                <button id="guest3" onclick="guestAdd3()">+3</button>
+                <div class="other">
+                    <div id="guest-fouls">Fouls: <span id="guest-foul-span">0 </span><button id="guest-fouls-btn" onclick="addGuestFouls()">+</button></div>
+                    <div id="guest-timeouts">Time Outs: <span id="guestTO-span">3</span><button id="guest-timeouts-btn" onclick="subtractGuestTO()">- </button></div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
